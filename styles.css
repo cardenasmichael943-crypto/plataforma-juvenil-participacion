@@ -3,6 +3,10 @@ body {
   margin: 0;
   background-color: #f8f5f7;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
@@ -14,8 +18,9 @@ header {
 
 main {
   padding: 25px;
+  width: 100%;
   max-width: 900px;
-  margin: auto;
+  box-sizing: border-box;
 }
 
 section {
@@ -48,6 +53,7 @@ footer {
   text-align: center;
   padding: 15px;
   background-color: #eee;
+  width: 100%;
 }
 
 .seccion-candidatos {
@@ -55,6 +61,16 @@ footer {
   padding: 25px;
   border-radius: 12px;
   margin-top: 25px;
+}
+
+.lista-candidatos,
+.formulario-candidato,
+.seccion-candidatos,
+main > section {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contenedor-candidatos {
@@ -96,5 +112,29 @@ footer {
   padding: 15px;
   background-color: #F9EEF3;
   border-left: 5px solid #C2185B;
+  border-radius: 8px;
+}
+
+.formulario-candidato input,
+.formulario-candidato textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#mensajeGuardado {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #8A1538;
+}
+
+.tarjeta-guardada {
+  margin-top: 12px;
+  padding: 12px;
+  border-left: 5px solid #8A1538;
+  background-color: #F9EEF3;
   border-radius: 8px;
 }
